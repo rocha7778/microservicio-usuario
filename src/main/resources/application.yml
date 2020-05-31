@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: servicio-usuario
+  datasource:
+     database: ${MYSQL_DATABASE:db_springboot_cloud}
+     host: ${MYSQL_HOST:localhost}
+     port: ${MYSQL_PORT:3306}
+     username: ${MYSQL_USERNAME:root}
+     password: ${MYSQL_ROOT_PASSWORD:nHgi^JTey*ym}
+     url: jdbc:mysql://${spring.datasource.host}:${spring.datasource.port}/${spring.datasource.database}?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=America/Bogota  
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true  
+server:
+  port: 8082
+  
+  
+  
